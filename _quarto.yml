@@ -13,13 +13,13 @@ webr:
 number-sections: true
   
 website:
-  title: "BIO 110 Web Tutorials"
+  title: "PSYCH 200 Web Tutorials"
   favicon: bioicon.png
   sidebar:
     style: "docked"
     contents: 
-      - href: Bio110_lesson_one.qmd
-      - href: Bio110_lesson_two.qmd
+      - href: Psych200_lesson_one.qmd
+      - href: Psych200_lesson_two.qmd
       - href: Bio110_lesson_three.qmd 
       - href: Bio110_lesson_four.qmd
       - href: Bio110_lesson_five.qmd

@@ -54,10 +54,10 @@ ggplot(data, mapping = aes()) +
 
 Before we create a boxplot, we need to tell R what kind of variables we are inputting.
 
-When creating a boxplot, our x variable should be **categorical** (called a **factor** variable in R language). A categorical variable has defined categories or groups. 
+When creating a boxplot, our x variable should be **categorical** (called a **factor** variable in R language). A categorical variable has defined categories or groups.
 
 Our y variable should be **continuous**. A continuous variable can take any numerical value.
- 
+
 ::: panel-tabset
 ## Question 5.2
 
@@ -99,7 +99,7 @@ Try that now with the categorical variable in `data`.
 
 ## Check your work
 
-Run the following code to check your work. If the output is "Factor w/ 2 levels....", then you wrote the right code! If not, try again. 
+Run the following code to check your work. If the output is "Factor w/ 2 levels....", then you wrote the right code! If not, try again.
 
 ```{webr-r}
 str(data$Condition)
@@ -170,7 +170,6 @@ If your code worked, you should see a boxplot for each condition, 1 (exercise) a
 Here's an image that illustrates how to interpret a boxplot: ![From https://datatab.net/tutorial/box-plot](Boxplot_quartiles.png)
 
 ::: {.border .p-3}
-
 ::: question
 **Looking at the boxplot you created, what is the 1st quartile for condition 2 (resting)?**
 
@@ -418,7 +417,7 @@ Next, we'll look at making scatterplots when the independent (x) variable is cat
 
 Suppose you wanted to create a graph that compared the respiratory quotients (RQ) under the two conditions: exercise and resting. Remember that the `Condition` variable is **categorical** because it sorts the data values into two categories.
 
-#### Specifying Type of Variable 
+#### Specifying Type of Variable
 
 First, let's tell R that `Condition` is a factor (categorical) variable. We already did this when we made a boxplot, so skip this step if you already did it and haven't refreshed the page since.
 

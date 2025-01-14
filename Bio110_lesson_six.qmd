@@ -265,6 +265,7 @@ summarize(avgVar1 = mean(var1),
 All the other code will be the same as when you first defined `tmtsummary`
 
 ## Hint
+
 ```{r}
 #| eval: false
 tmtsummary <- ________ |> 
@@ -286,17 +287,15 @@ tmtsummary <- bargraphdata |>
 
 Now we have our standard deviation data and we can use that to create error bars. The geom function for error bars is `geom_errorbar()`. We'll add an aesthetics argument to specify the max and min for the error bar.
 
-Here's how the error bar code will look: 
+Here's how the error bar code will look:
 
 ::: {.indent .p-.5}
-
 ```{r}
 #| eval: false
 geom_errorbar(mapping=aes(ymin = _______,
                           ymax = _______))
 ```
-
-:::   
+:::
 
 Try adding this command to your bar graph. Fill in the ymin and the ymax. Note that: the minimum error bar value is the 'mean of var1 - sd of var1' and the maximum error bar value is the 'mean of var1 + sd of var1'.
 
@@ -315,7 +314,8 @@ Copy and paste your code from the previous graph and chain on the `geom_errorbar
 
 ## Hint
 
-Your `geom_errorbar()` function should look like: 
+Your `geom_errorbar()` function should look like:
+
 ```{r}
 #| eval: false
 geom_errorbar(mapping=aes(ymin = avgVar1-sdVar1,
@@ -400,19 +400,18 @@ In this case, a clustered bar graph would have six different bars, one for each 
 
 ### Specifying data and variables
 
-To create a clustered bar graph, we'll chain on the command `facet_wrap(~variableName)` to our chain of ggplot functions. We can copy all our previous code, with just a few edits. 
+To create a clustered bar graph, we'll chain on the command `facet_wrap(~variableName)` to our chain of ggplot functions. We can copy all our previous code, with just a few edits.
 
 -   Below you'll see the code we used to create our non-clustered graph in the previous step. (Yours may look slightly different, but that's ok!)
 
--   You'll also see code to make a clustered bar graph, clustered by `year`. What's different from the non-clustered graph code? 
+-   You'll also see code to make a clustered bar graph, clustered by `year`. What's different from the non-clustered graph code?
 
 -   Finally, run the clustered bar graph code in the code editor!
 
 ::: panel-tabset
-
 ## Clustered bar graph code
 
-Here's the code you'll use to create a clustered bar graph code. Compare it to the code you used to create a bar graph in the previous step. What is different? 
+Here's the code you'll use to create a clustered bar graph code. Compare it to the code you used to create a bar graph in the previous step. What is different?
 
 ```{r}
 #| eval: false
@@ -432,7 +431,7 @@ ggplot(tmtsummary, mapping = aes(x=treatment, y=avgVar1, fill=treatment))+
 
 ## Non-clustered bar graph code
 
-Here's our code for the bar graph created in the [previous step](#sec-errorbars). Compare this code to the clustered bar graph code. What is different? 
+Here's our code for the bar graph created in the [previous step](#sec-errorbars). Compare this code to the clustered bar graph code. What is different?
 
 ```{r}
 #| eval: false
@@ -526,4 +525,4 @@ Try changing the year data to factor data and then rerunning the code to fix the
 
 That's it! Now you know how to use bar graphs to di splay your data, including adding error bars and creating clustered bar graphs. Remember that if the distribution of data values is highly non-normal, boxplots are a more appropriate form of graphical display than bar graphs.
 
-Next lesson, we'll learn some basic statistics. 
+Next lesson, we'll learn some basic statistics.
