@@ -7,9 +7,9 @@ project:
     - sampledatastats.csv
     - Boxplot_quartiles.png
     - bioicon.png
-  
-webr: 
-  packages: ['tidyverse', 'plotrix', 'DT', 'gt', 'kableExtra']
+
+webr:
+  packages: ['tidyverse', 'ggplot2', 'plotrix', 'DT', 'gt', 'htmlwidgets']
 number-sections: true
   
 website:
