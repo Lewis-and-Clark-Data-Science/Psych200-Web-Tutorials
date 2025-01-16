@@ -379,7 +379,7 @@ iframe.qwebr-output-code-browse {
 // Document level settings ----
 
 // Determine if we need to install R packages
-globalThis.qwebrInstallRPackagesList = ['tidyverse', 'plotrix'];
+globalThis.qwebrInstallRPackagesList = ['tidyverse', 'plotrix', 'DT', 'gt', 'kableExtra'];
 
 // Specify possible locations to search for the repository
 globalThis.qwebrPackageRepoURLS = ['https://repo.r-wasm.org/'];
@@ -1695,6 +1695,12 @@ globalThis.qwebrExecuteCode = async function (
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Bio110_lesson_three.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lesson 3: Variability</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Bio110_lesson_six.html" class="sidebar-item-text sidebar-link">

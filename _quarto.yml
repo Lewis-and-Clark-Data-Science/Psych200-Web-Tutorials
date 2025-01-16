@@ -9,7 +9,7 @@ project:
     - bioicon.png
   
 webr: 
-  packages: ['tidyverse', 'plotrix']
+  packages: ['tidyverse', 'plotrix', 'DT', 'gt', 'kableExtra']
 number-sections: true
   
 website:
@@ -18,10 +18,10 @@ website:
   sidebar:
     style: "docked"
     contents: 
-#      - href: Psych200_lesson_one.qmd
+#     - href: Psych200_lesson_one.qmd
 #     - href: Psych200_lesson_two.qmd
-#     - href: Bio110_lesson_three.qmd 
-#      - href: Bio110_lesson_four.qmd
+      - href: Bio110_lesson_three.qmd 
+#     - href: Bio110_lesson_four.qmd
 #     - href: Bio110_lesson_five.qmd
       - href: Bio110_lesson_six.qmd
 #     - href: Bio110_lesson_seven.qmd
