@@ -9,7 +9,7 @@ project:
     - bioicon.png
 
 webr:
-  packages: ['tidyverse', 'ggplot2', 'plotrix', 'DT', 'gt', 'htmlwidgets']
+  packages: ['tidyverse', 'ggplot2', 'plotrix', 'DT', 'gt', 'htmlwidgets', 'htmltools']
 number-sections: true
   
 website:
@@ -31,20 +31,8 @@ website:
 #      - progressive_tutorial_experimentation/Bio110_test2.qmd
   
 
-# format:
-#  html:
-#    theme: cosmo
-#    css: styles.css
-#    toc: true
-
 format:
   html:
-     theme: cosmo
-     css: styles.css
-     toc: true
-     embed-resources: true
-     include-in-header:
-      - https://cdn.plot.ly/plotly-latest.min.js
-
-execute:
-  freeze: auto    
+    theme: cosmo
+    css: styles.css
+    toc: true
