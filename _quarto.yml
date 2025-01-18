@@ -31,9 +31,20 @@ website:
 #      - progressive_tutorial_experimentation/Bio110_test2.qmd
   
 
+# format:
+#  html:
+#    theme: cosmo
+#    css: styles.css
+#    toc: true
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-    
+     theme: cosmo
+     css: styles.css
+     toc: true
+     embed-resources: true
+     include-in-header:
+      - https://cdn.plot.ly/plotly-latest.min.js
+
+execute:
+  freeze: auto    
